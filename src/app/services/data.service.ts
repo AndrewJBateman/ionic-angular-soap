@@ -22,27 +22,31 @@ export class DataService {
   }
 
   getAllCountries() {
-    return this.client.call('ListOfCountryNamesByName', {}).pipe(
-      map((data) => data.result.ListOfCountryNamesByNameResult.tCountryCodeAndName)
-    );
+    return this.client
+      .call('ListOfCountryNamesByName', {})
+      .pipe(
+        map(
+          (data) =>
+            data.result.ListOfCountryNamesByNameResult.tCountryCodeAndName
+        )
+      );
   }
 
   getFlagForCountry(isocde) {
-    return this.client.call('CountryFlag', {sCountryISOCode: isocde}).pipe(
-      map((data) => data.result.CountryFlagResult)
-    );
+    return this.client
+      .call('CountryFlag', { sCountryISOCode: isocde })
+      .pipe(map((data) => data.result.CountryFlagResult));
   }
 
   getCurrencyForCountry(isocde) {
-    return this.client.call('CountryCurrency', {sCountryISOCode: isocde}).pipe(
-      map((data) => data.result.CountryCurrencyResult)
-    );
+    return this.client
+      .call('CountryCurrency', { sCountryISOCode: isocde })
+      .pipe(map((data) => data.result.CountryCurrencyResult));
   }
 
   getCapitalForCountry(isocde) {
-    return this.client.call('CapitalCity', {sCountryISOCode: isocde}).pipe(
-      map((data) => data.result.CapitalCityResult)
-    );
+    return this.client
+      .call('CapitalCity', { sCountryISOCode: isocde })
+      .pipe(map((data) => data.result.CapitalCityResult));
   }
-
 }
