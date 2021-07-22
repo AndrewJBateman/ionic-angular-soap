@@ -23,22 +23,21 @@
 ## :books: General info
 
 * SOAP uses eXtensible Markup Language (XML)
-* SOAP data is from the [DataFlex Web Service](http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso)
+* THe SOAP API data is from the [DataFlex Web Service](http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso) - no API key needed
 * [Postman List of SOAP APIs](https://documenter.getpostman.com/view/8854915/Szf26WHn#33a2b225-11a6-48d3-a695-fb0989cc4971)
-* [This file](http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL) was copied into `assets/CountryInfoServices.xml`
-* The SOAP API used does not need an API key
+* [This file](http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL) was copied into `assets/CountryInfoServices.xml` as the WSDL document
 * SOAP does not have to be used with HTTP although in this app it is
 
 ## :camera: Screenshots
 
-![Ionic page](./img/country.jpg)
+![Ionic page](./img/country.png)
 
 ## :signal_strength: Technologies
 
 * [Ionic v5](https://ionicframework.com/)
 * [Angular v12](https://angular.io/)
 * [Ionic/angular v5](https://www.npmjs.com/package/@ionic/angular)
-* [rxjs v7](https://rxjs.dev/) Reactive Extensions library
+* [rxjs v6](https://rxjs.dev/) Reactive Extensions library
 * [ngx-soap v0.2.1](https://www.npmjs.com/package/ngx-soap/v/0.2.1) SOAP client for browser.
 * [Web Services Definition Language WSDL](https://www.w3.org/TR/wsdl.html) structured communications language used in conjuction with the SOAP protocol over HTTP
 
@@ -55,7 +54,6 @@
 ```typescript
 constructor(private soap: NgxSoapService) {
   this.soap.createClient('./assets/CountryInfoService.xml').then((client) => {
-    console.log('client: ', client);
     this.client = client;
     this.clientReady.next(true);
   });
