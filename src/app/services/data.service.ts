@@ -32,19 +32,19 @@ export class DataService {
       );
   }
 
-  getFlagForCountry(isocde) {
+  getFlagForCountry(isocde: string) {
     return this.client
       .call('CountryFlag', { sCountryISOCode: isocde })
       .pipe(map((data) => data.result.CountryFlagResult));
   }
 
-  getCurrencyForCountry(isocde) {
+  getCurrencyForCountry(isocde: string) {
     return this.client
       .call('CountryCurrency', { sCountryISOCode: isocde })
       .pipe(map((data) => data.result.CountryCurrencyResult));
   }
 
-  getCapitalForCountry(isocde) {
+  getCapitalForCountry(isocde: string) {
     return this.client
       .call('CapitalCity', { sCountryISOCode: isocde })
       .pipe(map((data) => data.result.CapitalCityResult));
