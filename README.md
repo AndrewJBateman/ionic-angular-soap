@@ -2,6 +2,7 @@
 
 * Ionic-Angular app that displays data about countries from a SOAP API
 * Data fetched using the SOAP web services, instead of Representational State Transfer (REST), over HTTP
+* Tutorial Code from [Simon Grimm](https://www.youtube.com/channel/UCZZPgUIorPao48a1tBYSDgg) - see [:clap: Inspiration](#clap-inspiration) below
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/ionic-angular-soap?style=plastic)
@@ -11,14 +12,18 @@
 
 ## :page_facing_up: Table of contents
 
-* [General info](#general-info)
-* [Screenshots](#screenshots)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
+* [Ionic Angular Soap](#ionic-angular-soap)
+  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+  * [:books: General info](#books-general-info)
+  * [:camera: Screenshots](#camera-screenshots)
+  * [:signal_strength: Technologies](#signal_strength-technologies)
+  * [:floppy_disk: Setup](#floppy_disk-setup)
+  * [:computer: Code Examples](#computer-code-examples)
+  * [:cool: Features](#cool-features)
+  * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
+  * [:clap: Inspiration](#clap-inspiration)
+  * [:file_folder: License](#file_folder-license)
+  * [:envelope: Contact](#envelope-contact)
 
 ## :books: General info
 
@@ -89,7 +94,7 @@ constructor(private soap: NgxSoapService) {
 
 ## :file_folder: License
 
-* This project is licensed under the terms of the MIT license.
+* N/A
 
 ## :envelope: Contact
 
