@@ -58,4 +58,4 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
   env: { DEBUG: undefined, PRODUCTION: undefined },
 };
 
-(window as any)['global'] = window;
+(window as any).global = window;
