@@ -29,7 +29,7 @@
 
 * SOAP uses eXtensible Markup Language (XML)
 * The SOAP API data is from the [DataFlex Web Service](http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso) - no API key needed
-* [ngx-soap](https://www.npmjs.com/package/ngx-soap) requires a list of dependencies, including [buffer](https://www.npmjs.com/package/buffer) browser buffer module, [concat-stream](https://www.npmjs.com/package/concat-stream) to collect all the data from a stream into a single buffer, [core-js](https://www.npmjs.com/package/core-js) modular standard library, [crypto-js](https://www.npmjs.com/package/crypto-js) library of crypto standards, [events](https://www.npmjs.com/package/events) event emitter, [lodash](https://www.npmjs.com/package/lodash) library, [sax](https://www.npmjs.com/package/sax) sax-style parser for XML and HTML, [stream](https://www.npmjs.com/package/stream) for Node.js streams in the browser & [uuid](https://www.npmjs.com/package/uuid) for creation of RFC4122 UUIDs. This creates a huge vendor build bundle (5.29MB) - see source-map image
+* [ngx-soap](https://www.npmjs.com/package/ngx-soap) requires a list of dependencies, including [browser buffer module](https://www.npmjs.com/package/buffer), [concat-stream](https://www.npmjs.com/package/concat-stream) to collect all the data from a stream into a single buffer, [core-js](https://www.npmjs.com/package/core-js) modular standard library, [crypto-js](https://www.npmjs.com/package/crypto-js) library of crypto standards, [events](https://www.npmjs.com/package/events) event emitter, [lodash](https://www.npmjs.com/package/lodash) library, [sax](https://www.npmjs.com/package/sax) sax-style parser for XML and HTML, [stream](https://www.npmjs.com/package/stream) for Node.js streams in the browser & [uuid](https://www.npmjs.com/package/uuid) for creation of RFC4122 UUIDs. This creates a huge vendor build bundle (5.29MB) - see source-map image
 * [source-map-explorer](https://www.npmjs.com/package/source-map-explorer) installed globally and used to generate Source-map
 * [Postman List of SOAP APIs](https://documenter.getpostman.com/view/8854915/Szf26WHn#33a2b225-11a6-48d3-a695-fb0989cc4971)
 * [This file](http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL) was copied into `assets/CountryInfoServices.xml` as the WSDL document
@@ -42,11 +42,12 @@
 
 ## :signal_strength: Technologies
 
-* [Ionic v5](https://ionicframework.com/)
-* [Angular v12](https://angular.io/)
-* [Ionic/angular v5](https://www.npmjs.com/package/@ionic/angular)
-* [rxjs v6](https://rxjs.dev/) Reactive Extensions library
-* [ngx-soap v0.2.1](https://www.npmjs.com/package/ngx-soap/v/0.2.1) SOAP client for browser.
+* [Ionic v6](https://ionicframework.com/)
+* [Angular v13](https://angular.io/)
+* [Ionic/angular v6](https://www.npmjs.com/package/@ionic/angular)
+* [rxjs v7](https://rxjs.dev/) Reactive Extensions library
+* [ngx-soap v0.7.0](https://www.npmjs.com/package/ngx-soap/v/0.2.1) SOAP client for browser.
+* [uuid v3.3.2](https://www.npmjs.com/package/uuid) for the creation of RFC4122 UUIDs. Do not update to latest version or the app will not work.
 * [Web Services Definition Language WSDL](https://www.w3.org/TR/wsdl.html) structured communications language used in conjuction with the SOAP protocol over HTTP
 
 
@@ -54,7 +55,7 @@
 
 * Run `npm i` to install dependencies
 * Run `ionic serve` to start the server on _localhost://8100_
-* Run `npm run lint` to lint entire app
+* Run `npm run lint` to lint entire app. No linting errors
 * Run `npm run build` to create a build file
 * Run `npm run build --prod` to create a build file with named chunks and a source map
 * Run `source-map-explorer www/main*.js` to view source map
